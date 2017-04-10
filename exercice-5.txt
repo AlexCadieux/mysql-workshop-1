@@ -1,3 +1,6 @@
+mysql> CREATE TABLE Account (     accountID INT AUTO_INCREMENT PRIMARY KEY     );                       
+Query OK, 0 rows affected (0.01 sec)
+
 mysql> CREATE TABLE AddressBook (
     ->     contactID INT AUTO_INCREMENT PRIMARY KEY
     ->     );
