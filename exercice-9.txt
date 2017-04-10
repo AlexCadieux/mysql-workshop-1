@@ -1,0 +1,17 @@
+mysql> SELECT type, COUNT(*) AS total FROM Animals WHERE birthday <= NOW() AND death_date IS NULL GROUP BY type;
++---------+-------+
+| type    | total |
++---------+-------+
+| rooster |     1 |
+| hen     |     1 |
+| chicken |     2 |
++---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> SELECT type, COUNT('chicken') FROM Animals WHERE DATE_ADD(birthday,INTERVAL 21 DAY) <= NOW();
++------+------------------+
+| type | COUNT('chicken') |
++------+------------------+
+| hen  |                3 |
++------+------------------+
+1 row in set (0.00 sec)
