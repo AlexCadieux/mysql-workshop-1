@@ -1,0 +1,25 @@
+mysql> describe Rooms;
++-----------------+----------------------------------+------+-----+---------+----------------+
+| Field           | Type                             | Null | Key | Default | Extra          |
++-----------------+----------------------------------+------+-----+---------+----------------+
+| room_num        | int(11)                          | NO   | PRI | NULL    | auto_increment |
+| floor           | int(11)                          | NO   | MUL | NULL    |                |
+| for_rent        | tinyint(1)                       | NO   |     | NULL    |                |
+| available       | tinyint(1)                       | NO   |     | NULL    |                |
+| private_kitchen | tinyint(1)                       | NO   |     | NULL    |                |
+| floor_type      | enum('carpet','wood','laminate') | YES  |     | NULL    |                |
+| max_occ         | int(11)                          | NO   |     | NULL    |                |
+| windows         | int(11)                          | YES  |     | NULL    |                |
++-----------------+----------------------------------+------+-----+---------+----------------+
+8 rows in set (0.00 sec)
+
+mysql> DESCRIBE Rental;
++-----------+----------+------+-----+---------+----------------+
+| Field     | Type     | Null | Key | Default | Extra          |
++-----------+----------+------+-----+---------+----------------+
+| rental_id | int(11)  | NO   | PRI | NULL    | auto_increment |
+| check_in  | datetime | YES  |     | NULL    |                |
+| check_out | datetime | YES  |     | NULL    |                |
+| room      | int(11)  | YES  | MUL | NULL    |                |
++-----------+----------+------+-----+---------+----------------+
+4 rows in set (0.00 sec)
