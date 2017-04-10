@@ -1,0 +1,16 @@
+mysql> CREATE TABLE AddressBook (
+    ->     contactID INT AUTO_INCREMENT PRIMARY KEY
+    ->     );
+Query OK, 0 rows affected (0.01 sec)
+
+mysql>     
+mysql> CREATE TABLE Entry (
+    ->     entryNum INT AUTO_INCREMENT PRIMARY KEY
+    ->     );
+Query OK, 0 rows affected (0.17 sec)
+
+mysql>     
+mysql> CREATE TABLE test (
+    ->     testID INT AUTO_INCREMENT PRIMARY KEY
+    ->     );
+Query OK, 0 rows affected (0.02 sec)

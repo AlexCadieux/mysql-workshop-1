@@ -1,0 +1,13 @@
+mysql> SHOW DATABASES;
++----------------------+
+| Database             |
++----------------------+
+| information_schema   |
+| c9                   |
+| decodemtl_adressbook |
+| finances             |
+| mysql                |
+| performance_schema   |
+| phpmyadmin           |
++----------------------+
+7 rows in set (0.00 sec)
